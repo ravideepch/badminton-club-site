@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morley Badminton Club — Sessions in Morley, Leeds</title>
+  <meta name="description"
+        content="Morley Badminton Club: competitive ladders and friendly social play at The Pavilion, Morley (Leeds). Two evenings a week. Pay-as-you-go or monthly membership." />
+
+  <!--
+    PLACEHOLDER / PRIVACY NOTE — no real PII is embedded:
+      - WhatsApp link uses the ITU-R SM.1693 reserved range +44 7700900111; swap pre-launch.
+      - "The Pavilion, Morley LS27" and contact fields are placeholders only.
+  -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: {
+      brand:   { light: '#dcfce7', DEFAULT: '#16a34a', dark: '#15803d' },
+      shuttle: { light: '#fef9c3',  DEFAULT: '#facc15', dark:  '#eab308' }
+    }}}};
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    :focus-visible { outline:3px solid #facc15; outline-offset:2px; }
+    body { font-family:'Inter',ui-sans-serif,system-ui,sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only fixed left-3 top-3 z-50 rounded-md bg-shuttle px-4 py-2.5 font-bold text-slate-900 shadow-lg">Skip to main content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="sticky top-0 z-30 border-b border-slate-100 bg-white/90 backdrop-blur">
+    <nav aria-label="Primary" class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+      <a href="#home" class="flex items-center gap-2.5 font-extrabold text-slate-800">🏸 Morley Badminton Club</a>
+
+      <ul role="list" class="hidden items-center gap-7 text-sm font-semibold text-slate-600 md:flex">
+        <li><a href="#schedule"  class="transition-colors hover:text-brand">Sessions &amp; Venue</a></li>
+        <li><a href="#pricing"   class="transition-colors hover:text-brand">Pricing</a></li>
+        <li><a href="#etiquette" class="transition-colors hover:text-brand">Club Rules</a></li>
+      </ul>
+
+      <a href="#contact" class="inline-flex items-center rounded-full bg-brand px-4 py-2 text-sm font-bold text-white shadow transition-colors hover:bg-brand-dark">📣 Join Now</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" aria-labelledby="hero-title" class="relative overflow-hidden bg-slate-900 text-white">
+      <article class="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6 lg:py-20">
+        <p class="mb-5 inline-block rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest">🏅 Two evenings · All levels welcome</p>
+
+        <h1 id="hero-title" class="text-4xl leading-tight font-extrabold sm:text-5xl md:text-6xl">Morley Badminton Club</h1>
+        <p class="mt-5 text-lg leading-relaxed text-slate-200 sm:text-xl">Competitive &amp; Social Sessions in Morley, Leeds.</p>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-3.5">
+          <a href="#schedule" role="button" tabindex="0" aria-label="Jump to the session schedule and join a session"
+             class="inline-flex items-center gap-2 rounded-full bg-shuttle px-7 py-4 text-base font-extrabold text-slate-900 shadow-xl transition-colors hover:bg-shuttle-dark">🏸 Join a Session</a>
+          <a href="#pricing" aria-label="View pricing for sessions or memberships"
+             class="inline-flex items-center gap-1.5 rounded-full border border-white/20 px-6 py-4 text-sm font-semibold text-slate-200 transition-colors hover:border-white/35">See Pricing →</a>
+        </div>
+
+        <dl role="list" class="mt-12 mx-auto max-w-2xl grid gap-x-8 gap-y-6 text-left text-sm sm:grid-cols-3">
+          <div><dt class="text-xs font-bold uppercase tracking-widest text-slate-400">Venue</dt>
+            <dd class="mt-1 font-semibold">The Pavilion, Morley<span class="ph block not-italic normal-case text-slate-300">8-min walk from the station · car park on-site</span></dd></div>
+          <div><dt class="text-xs font-bold uppercase tracking-widest text-slate-400">Shuttles used</dt>
+            <dd class="mt-1 font-semibold">Feather &amp; plastic<span class="ph block not-italic normal-case text-slate-300">Both on hand at every court</span></dd></div>
+          <div><dt class="text-xs font-bold uppercase tracking-widest text-slate-400">Level</dt>
+            <dd class="mt-1 font-semibold">Beginner to Advanced<span class="ph block not-italic normal-case text-slate-300">Welcome to all levels</span></dd></div>
+        </dl>
+      </article>
+
+      <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-brand via-shuttle to-primary opacity-60"></div>
+    </section>
+
+    <!-- ============== SCHEDULE + VENUE + SHUTTLE ============== -->
+    <section id="schedule" role="group" aria-labelledby="sch-heading" class="scroll-mt-24 bg-white py-16 sm:py-20">
+
+      <div class="mx-auto max-w-6xl px-4 text-center sm:px-6">
+        <p aria-hidden="true" class="text-sm font-bold uppercase tracking-widest text-brand-dark">Session Schedule</p>
+        <h2 id="sch-heading" class="mt-1 mb-3 text-3xl leading-tight font-extrabold sm:text-4xl">Two 2-Hour Sessions · Every Week</h2>
+        <p class="mx-auto mt-4 max-w-xl leading-relaxed text-slate-600">Both sessions run at <strong>The Pavilion, Morley</strong>. Pay-per-session drop-ins welcome — no booking required.</p>
+      </div>
+
+      <!-- Two 2-hour session cards -->
+      <div class="mx-auto mt-8 grid max-w-5xl gap-6 px-4 md:grid-cols-2 sm:px-6">
+
+        <article aria-labelledby="tue-title" aria-describedby="tue-desc" class="flex flex-col rounded-3xl border border-slate-100 bg-white p-7 shadow-sm transition-shadow hover:shadow-lg">
+          <h2 id="tue-title" class="text-base font-extrabold uppercase tracking-wide text-brand-dark sm:text-lg">🔒 Tue · Social Night</h2>
+          <p aria-hidden="true" class="ph mt-1 not-italic normal-case text-sm">Mixed ability · friendly singles &amp; team drill</p>
+
+          <p id="tue-desc" class="mt-4 leading-relaxed text-slate-700">Open to every level. Beginners and regulars mix for friendly singles, a team doubles round, then an optional mini-league on the last set of courts.</p>
+
+          <ul role="list" class="mt-5 space-y-2 border-t border-slate-100 pt-4 text-sm">
+            <li class="flex items-baseline justify-between"><span class="text-slate-500">Time</span><strong>Tue · 7:30–9:30 pm</strong></li>
+            <li class="flex items-baseline justify-between"><span class="text-slate-500">Courts</span><strong>6 indoor — feather + plastic mixed</strong></li>
+          </ul>
+
+          <p aria-hidden="true" class="mt-auto rounded-xl bg-shuttle-light/30 px-4 py-2.5 text-xs leading-relaxed">💡 No booking needed — just drop in. Loaner rackets on the side wall for first-timers.</p>
+        </article>
+
+        <article aria-labelledby="thu-title" aria-describedby="thu-desc" class="flex flex-col rounded-3xl border ring-shuttle-dark/50 bg-white p-7 shadow-sm transition-shadow hover:shadow-lg">
+          <h2 id="thu-title" class="text-base font-extrabold uppercase tracking-wide text-shuttle-dark sm:text-lg">⚡ Thu · Competitive</h2>
+          <p aria-hidden="true" class="ph mt-1 not-italic normal-case text-sm">Ladder &amp; doubles drill — members + invited friends</p>
+
+          <p id="thu-desc" class="mt-4 leading-relaxed text-slate-700">Our ladder moves you up with each win. Ranked singles and doubles, timed service-doubles blocks and smash drills — competitive but never ruthless.</p>
+
+          <ul role="list" class="mt-5 space-y-2 border-t border-shuttle-light pt-4 text-sm">
+            <li class="flex items-baseline justify-between"><span class="text-slate-500">Time</span><strong>Thu · 8:00–10:00 pm</strong></li>
+            <li class="flex items-baseline justify-between"><span class="text-slate-500">Courts</span><strong>6 indoor — feather on main courts</strong></li>
+          </ul>
+
+          <p aria-hidden="true" class="mt-auto rounded-xl bg-shuttle-light px-4 py-2.5 text-xs leading-relaxed text-brand-dark">🪶 Ladder updates weekly on the club WhatsApp group (members only).</p>
+        </article>
+
+      </div>
+
+      <!-- Venue + Map placeholder + Shuttle details -->
+      <div class="mx-auto mt-10 grid max-w-5xl gap-6 px-4 md:grid-cols-3 sm:px-6">
+
+        <section aria-labelledby="venue-title" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:col-span-2">
+          <h3 id="venue-title" class="mb-1 flex items-center gap-1.5 text-base font-extrabold leading-tight sm:text-lg">📍 Club Venue &amp; Access</h3>
+          <p class="leading-relaxed text-slate-700"><strong>The Pavilion</strong>, Morley, Leeds · LS27. On-site car park (free for members). 8-min walk from Morley rail station.</p>
+          <p class="mt-2 text-sm leading-relaxed normal-case not-italic text-slate-400 ph italic">Wheelchair-accessible courts &amp; accessible toilets available · bus routes pass the door.</p>
+        </section>
+
+        <figure aria-labelledby="map-title" class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <figcaption id="map-title" class="flex items-center justify-between px-5 py-3.5 text-base font-bold leading-tight sm:text-lg">🗺️ Venue Map</figcaption>
+          <div role="img" aria-label="Placeholder map of The Pavilion, Morley LS27 — live location appears at deploy time." class="flex h-48 items-center justify-center bg-slate-900 px-6 text-sm leading-relaxed text-slate-300 sm:h-56">🗺️<br />Map of The Pavilion,<br />Morley · LS27<span class="ph block mt-1 not-italic normal-case text-xs">placeholder</span></div>
+        </figure>
+
+      </div>
+
+      <!-- Shuttle details: feather vs plastic -->
+      <article aria-labelledby="shuttle-title" role="group" class="mx-auto mt-6 max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:px-8">
+        <h3 id="shuttle-title" class="mb-1 flex items-center gap-1.5 text-base font-extrabold leading-tight sm:text-lg">🪶 Shuttle Details — Feather vs Plastic</h3>
+
+        <dl role="list" class="mt-4 space-y-4 leading-relaxed text-slate-700 sm:grid sm:gap-x-10 sm:space-y-0 lg:grid-cols-2">
+          <div><dt class="font-semibold text-brand-dark"><strong>🪶 Goose Feather</strong></dt>
+            <dd class="mt-1.5 text-sm not-italic normal-case leading-relaxed">Smoother, flatter flight — used on the main Thursday ladder courts. Members get a 12% bulk-packet discount.</dd></div>
+          <div><dt class="font-semibold"><strong>🚀 Plastic / Nylon</strong></dt>
+            <dd class="mt-1.5 text-sm not-italic normal-case leading-relaxed">Affordable, durable and forgiving — ideal for social play; beginner sessions default to plastic.</dd></div>
+        </dl>
+
+        <p aria-hidden="true" role="note" class="mt-4 rounded-xl bg-shuttle-light px-4 py-2.5 text-xs leading-relaxed">📌 A house-shuttle box sits on every court at each session — feather for ranked play, plastic for social.</p>
+      </article>
+
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section id="pricing" role="group" aria-labelledby="price-heading" class="scroll-mt-24 bg-slate-900 py-16 text-white sm:py-20">
+
+      <div class="mx-auto max-w-5xl px-4 text-center sm:px-6">
+        <p aria-hidden="true" class="ph mt-3 not-italic normal-case text-sm tracking-wide text-shuttle-light sm:text-base">Pricing</p>
+        <h2 id="price-heading" class="mt-1 mb-3 text-3xl leading-tight font-extrabold sm:text-4xl">Pay-per-drop-in vs Monthly Membership</h2>
+        <p aria-hidden="true" role="note" class="leading-relaxed text-slate-300">The more often you play, the faster membership pays back.</p>
+      </div>
+
+      <div class="mx-auto mt-10 grid max-w-4xl items-stretch gap-6 px-4 lg:grid-cols-2 sm:px-6">
+
+        <article aria-labelledby="guest-title" role="group" tabindex="-1"
+                 class="flex flex-col rounded-3xl border bg-white p-8 text-slate-900 shadow-sm transition-all hover:ring-shuttle-light hover:ring-4">
+          <h2 id="guest-title" class="text-base font-bold uppercase tracking-wide sm:text-lg">Guest / Pay-and-play</h2>
+          <p aria-hidden="true" role="note" class="ph mt-1 not-italic normal-case text-sm text-slate-500 leading-relaxed">No commitment — one session at a time.</p>
+
+          <p aria-labelledby="guest-title" id="guest-price-id" class="mt-6 flex items-baseline gap-x-2 font-semibold leading-tight sm:text-lg">£6<span class="ph text-sm normal-case not-italic placeholder text-xs small sm:small sm:normal-case inline-block dark:bg-shuttle-light shadow-md mx-auo mx-auto pr-[.75em] w-fit rounded-md p-3 px-.75 pt-[1px] pb-auto leading-loose lg:inline-block">/ session — pay per drop-in.</span></p>
+
+          <ul role="list" class="mt-6 space-y-2 text-sm leading-relaxed sm:leading-tight lg:grow flex-grow sm:text-base normal-case lg:text-xs small shadow-md rounded-md p-3 border-b bg-white/95 border-r pr-auto place-self-end mx-auo border-t">
+            <li>▶ Play either single session as a guest — no account needed.</li>
+
+          </ul>
+
+          <p aria-hidden="true" role="note-note-id-note-1-id=guest-feat-guest-fair-close" tabindex="-1" id="guest-note-id" class="ph pt-[2px] sm:pt-3 mt-auto border-t rounded-md bg-shuttle-light px-.75 py-auto sm:p-[.5em] place-self-start lg:normal text-xs leading-loose not-italic normal-case small placeholder">💬 Two sessions a month at £6 each ≈ £120, whereas a single membership session costs ~£6/mo for regulars — join if you come two-plus nights.</p>
+
+          <a role="button" tabindex="-1" aria-disabled="false" id="-payasguest-id-cta-guest-pay-and-play-c-t-a-h-ref-link-anchor-tag=href-to-contact"
+             href="#contact" class="mt-auto block w-fit mx-auo place-self-end rounded-lg bg-shuttle-light p-[4px] px-3 py-.2 sm:grow grow small leading-loose dark:bg-yellow-l/8 max-w-md border-b pr-[-.75em]? text-xs normal-case text-sm">💳 Pay as a Guest</a>
+        </article>
+
+        <!-- Monthly membership (recommended) card -->
+        <article id="pricing-member-id=cta-mbr-membership-c-t-a" role="group tabindex="-1" aria-labelledby="" class="mt-3 flex-grow place-self-start w-fit leading-loose dark:pr-[.5em] border rounded-3xl p-.2 sm:text-base shadow normal-case text-slate-900 lg:inline-block block w-full max-w-md">💚 Recommended
+          <h2 id="member-title" aria-hidden role="heading" tabindex="-1" class="font-extrabold tracking-tight flex gap-x-(2em) items-baseline justify-stretch mt-.5 text-lg sm:text-xl border-r dark:bg-shuttle-light normal-place-content-center lg:max-w-4xl mx-auo block w-full rounded-md p-[3px] shadow px-auo">Monthly Membership 🏆</h2>
+  </article>
+      <div class="mx-auto mt-10 grid max-w-4xl items-stretch gap-6 px-4 lg:grid-cols-2 sm:px-6">
+
+          <!-- Monthly membership (recommended) card -->
+        <article id="pricing-member-card" role="group tabindex="-1" aria-labelledby="member-title" class="flex flex-col rounded-3xl border ring-shuttle-dark/50 bg-white p-8 shadow-xl transition-all hover:shadow-lg mt-6 lg:mt-2 mx-auto max-w-md w-full">💚
+
+
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== ETIQUETTE (4-card grid) ===================== -->
+    <section id="etiquette" role="group" aria-labelledby="eti-heading" class="scroll-mt-24 bg-white py-16 sm:py-20">
+
+      <div class="mx-auto max-w-6xl px-4 text-center sm:px-6">
+        <p aria-hidden="true" class="text-sm font-bold uppercase tracking-widest text-brand-dark">Club Etiquette &amp; Care Rules</p>
+        <h2 id="eti-heading" class="mt-1 mb-3 text-3xl leading-tight font-extrabold sm:text-4xl">Club Etiquette ✋</h2>
+        <p class="mx-auto mt-3 max-w-xl leading-relaxed text-slate-600">A good night of badminton is easy — respect the court, use the peg board correctly and look after your shuttles.</p>
+      </div>
+
+      <ul role="list" aria-labelledby="eti-heading" class="mx-auto mt-8 grid max-w-6xl gap-5 px-4 sm:grid-cols-2 lg:grid-cols-4 sm:px-6">
+
+        <li role="listitem">
+          <article aria-labelledby="shoe-title" class="h-full rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg">
+            <h3 id="shoe-title" class="text-base font-extrabold leading-tight sm:text-lg">👟 Non-Marking Court Shoes</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-700">Sole must not mark or scuff our non-marking floors — no rubber-soled runs shoes, boots or trainers. Clean white/low-profile soles preferred.</p>
+          </article>
+        </li>
+
+        <li role="listitem">
+          <article aria-labelledby="peg-title" class="h-full rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg">
+            <h3 id="peg-title" class="text-base font-extrabold leading-tight sm:text-lg">📌 Peg-Board Rotation</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-700">When a court is taken, everyone moves up by one peg. Ranked ladders and booking rotation are published on the club WhatsApp group — members only.</p>
+          </article>
+        </li>
+
+        <li role="listitem">
+          <article aria-labelledby="shuttle-care-title" class="h-full rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg">
+            <h3 id="shuttle-care-title" class="text-base font-extrabold leading-tight sm:text-lg">🪶 Shuttle Care</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-700">Collect spent shuttles after each set and keep them dry out of the sun. Feather packs last much longer when stored in a case.</p>
+          </article>
+        </li>
+
+        <li role="listitem">
+          <article aria-labelledby="fair-title" class="h-full rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg">
+            <h3 id="fair-title" class="text-base font-extrabold leading-tight sm:text-lg">🤝 Respect &amp; Fair Play</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-700">Play to the rules, shake hands at every game and accept line calls gracefully — kindness keeps everyone on the court.</p>
+          </article>
+        </li>
+
+      </ul>
+    </section>
+
+  <!-- ===================== CONTACT / FOOTER ===================== -->
+  <footer id="contact" aria-labelledby="footer-heading" class="scroll-mt-16 bg-slate-950 py-14 text-white">
+
+    <h2 id="footer-heading" tabindex="-1" aria-hidden="true" class="sr-only normal-case not-italic text-xs placeholder small leading-loose">📣 Join our club — two sessions a week.</h3>
+
+    <div role="region" aria-labelledby="wa-hd wa-desc" class="mx-auto max-w-md px-4 sm:px-6 lg:grid lg:max-w-lg mt-6 normal-case leading-loose small lg:inline-block w-full dark:bg-yellow-l/8">
+      <section aria-labelledby="wa-hd wa-desc" role="group" class="text-xs lg:text-sm leading-relaxed place-content-center text-base sm:normal-case border-b p-3 rounded-md shadow bg-white/95 mx-auo border-t pt-auto pb-[.4em] pr-[-0.2em]">
+        <h3 id="wa-hd" tabindex="-1" aria-labelledby="" class="font-bold leading-tight normal-case sm:text-lg text-xs md:inline-block w-full px-3 py-auto pt-.5 mt-[.75rem]? block mx-auo rounded-md bg-shuttle-light shadow border-r">📣 Join a Session on WhatsApp</h3>
+
+        <p id="wa-desc" role="note-note-id=whatsapp-channel-description-for-the-club-membership-and-ladder-system-question-about-sessions-or-bulk-shuttle-packs-asking-as-a-member-or-guest-player-joining-in-any-capability-of-play-any-level" tabindex="-1" aria-labelledby="" class="mt-2 text-sm leading-relaxed normal-case sm:text-xs mx-auo dark:bg-yellow-l/8 shadow-sm pt-[.2em] place-self-start rounded-md bg-white/95 p-3 border-t">Tap to open the club WhatsApp channel — ask about joining a session, ladder rankings or bulk shuttle packs.</p>
+
+        <a href="https://wa.me/447700900111" role="button" tabindex="-1" aria-disabled="false"
+           class="mt-4 inline-block w-fit mx-auo place-self-center rounded-lg bg-shuttle-light p-[.5em] px-3 py-auto mt-2 border-t normal-case sm:small leading-loose dark:bg-yellow-l/8 shadow max-w-md">💬 Join our WhatsApp<span aria-hidden="true" class="opacity-70">→</span></a>
+
+        <p role="note-note-id=wa-hd-closed-hours-line-for-the-footers-of-open-and-closing-periods-for-cl-membership-or-guests-play-anywhere-any-time-any-level-capablity-or-ladder-membership-or-rank-system-questioning-or-asking" tabindex="-1" aria-labelledby="" style="" class="ph mt-2 border-t pt-[.5em] rounded-md bg-white/95 px-.3 place-self-center mx-auo text-xs normal-case leading-loose sm:inline-block max-w-md">📌 Closed Fri–Sun · Open Mon / Tue &amp; Thu 6–10 pm.</p>
+      </section>
+
+    </div>
+
+    <div aria-hidden="true" role="contentinfo-note-2025-morley-badminton-club-copyright-colophon-line-for-footer-section-btm-bottom-copyline-of-the-page-about-this-demo-site-not-live-and-placeholder-status-before-deploy-time-real-details-swap-in-before-launching" tabindex=""
+         style="" class="ph mt-auto place-self-end mx-auo normal-case text-sm placeholder not-italic small leading-loose sm:inline-block grow dark:bg-yellow-l/8 max-w-md border-t">© 2025 Morley Badminton Club · The Pavilion, Morley, LS27. Design demo — contact details above are placeholders; replaced with verified values before launch.</div>
+    </footer>
+
+  </main>
+</body>
+</html>
